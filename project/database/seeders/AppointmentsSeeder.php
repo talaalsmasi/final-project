@@ -1,0 +1,186 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
+
+class AppointmentsSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('appointments')->insert([
+            [
+                'user_id' => 1,
+                'pet_id' => 1,
+                'doctor_id' => 3,
+                'service_id' => 1,
+                'appointment_date' => Carbon::now()->addDays(2),
+                'appointment_time' => '10:00 AM - 10:30 AM',
+                'status' => 'pending',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 2,
+                'pet_id' => 2,
+                'doctor_id' => 2,
+                'service_id' => 2,
+                'appointment_date' => Carbon::now()->addDays(3),
+                'appointment_time' => '11:00 AM - 11:30 AM',
+                'status' => 'approved',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 3,
+                'pet_id' => 3,
+                'doctor_id' => 1,
+                'service_id' => 3,
+                'appointment_date' => Carbon::now()->addDays(4),
+                'appointment_time' => '12:00 PM - 12:30 PM',
+                'status' => 'pending',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 1,
+                'pet_id' => 2,
+                'doctor_id' => 1,
+                'service_id' => 1,
+                'appointment_date' => Carbon::now()->addDays(5),
+                'appointment_time' => '01:00 PM - 01:30 PM',
+                'status' => 'approved',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 2,
+                'pet_id' => 1,
+                'doctor_id' => 2,
+                'service_id' => 2,
+                'appointment_date' => Carbon::now()->addDays(6),
+                'appointment_time' => '02:00 PM - 02:30 PM',
+                'status' => 'pending',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 3,
+                'pet_id' => 4,
+                'doctor_id' => 3,
+                'service_id' => 3,
+                'appointment_date' => Carbon::now()->addDays(7),
+                'appointment_time' => '03:00 PM - 03:30 PM',
+                'status' => 'approved',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 1,
+                'pet_id' => 3,
+                'doctor_id' => 3,
+                'service_id' => 1,
+                'appointment_date' => Carbon::now()->addDays(8),
+                'appointment_time' => '04:00 PM - 04:30 PM',
+                'status' => 'pending',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 2,
+                'pet_id' => 5,
+                'doctor_id' => 2,
+                'service_id' => 2,
+                'appointment_date' => Carbon::now()->addDays(9),
+                'appointment_time' => '05:00 PM - 05:30 PM',
+                'status' => 'approved',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 3,
+                'pet_id' => 6,
+                'doctor_id' => 1,
+                'service_id' => 3,
+                'appointment_date' => Carbon::now()->addDays(10),
+                'appointment_time' => '06:00 PM - 06:30 PM',
+                'status' => 'pending',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 1,
+                'pet_id' => 1,
+                'doctor_id' => 2,
+                'service_id' => 1,
+                'appointment_date' => Carbon::now()->addDays(11),
+                'appointment_time' => '10:30 AM - 11:00 AM',
+                'status' => 'approved',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 2,
+                'pet_id' => 2,
+                'doctor_id' => 1,
+                'service_id' => 2,
+                'appointment_date' => Carbon::now()->addDays(12),
+                'appointment_time' => '11:30 AM - 12:00 PM',
+                'status' => 'pending',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 3,
+                'pet_id' => 3,
+                'doctor_id' => 3,
+                'service_id' => 3,
+                'appointment_date' => Carbon::now()->addDays(13),
+                'appointment_time' => '12:30 PM - 01:00 PM',
+                'status' => 'approved',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 1,
+                'pet_id' => 4,
+                'doctor_id' => 2,
+                'service_id' => 1,
+                'appointment_date' => Carbon::now()->addDays(14),
+                'appointment_time' => '01:30 PM - 02:00 PM',
+                'status' => 'pending',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 2,
+                'pet_id' => 5,
+                'doctor_id' => 3,
+                'service_id' => 2,
+                'appointment_date' => Carbon::now()->addDays(15),
+                'appointment_time' => '02:30 PM - 03:00 PM',
+                'status' => 'approved',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'user_id' => 3,
+                'pet_id' => 6,
+                'doctor_id' => 2,
+                'service_id' => 3,
+                'appointment_date' => Carbon::now()->addDays(16),
+                'appointment_time' => '03:30 PM - 04:00 PM',
+                'status' => 'pending',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ]);
+    }
+}
